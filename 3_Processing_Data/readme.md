@@ -7,11 +7,11 @@ long long 至少 64 位，且至少与 long 一样长 。
 
 #### climits中的符号常量
 
-![img](../3_Processing_Data/image/climits 中的符号常量1.jpg)
+![img](../3_Processing_Data/image/climits中的符号常量1.jpg)
 
-![img](../3_Processing_Data/image/climits 中的符号常量2.jpg)
+![img](../3_Processing_Data/image/climits中的符号常量2.jpg)
 
-#### //后缀
+#### 后缀
 
 整数后面的 l 或 L 后缀表示该整数为 long 常量， u 或 U 后缀表示 unsigned int 常量， ul(可以采用任何一种顺序，大写小写均可）表示 unsigned long 常量（由千小写 l 看上去像 1, 因此应使用大写 L 作后缀）。C++11 提供了用于表示类型 long long 的后缀 11 和 LL, 还提供了用于表示类型 unsigned long long 的后缀 ull 、 Ull 、 uLL 和 ULL。
 
