@@ -9,9 +9,9 @@ class Stock
 {
     private:
         std::string company;
-        long shares;
-        double share_val;
-        double total_val;
+        long shares;  // 持有的股票数量
+        double share_val; // 每股的价格
+        double total_val; // 股票总价格
         void set_tot(){ total_val = shares * share_val; }
     public:
         void acquire(const std::string & co, long n, double pr);
