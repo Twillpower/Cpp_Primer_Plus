@@ -1,7 +1,7 @@
 // stockOO.h - -股票类接口
 // version 00 
-#ifndef STOCKOO_H_
-#define STOCKOO_H_
+#ifndef STOCK00_H_
+#define STOCK00_H_
 
 #include <string>
 
@@ -14,8 +14,8 @@ class Stock
         double total_val; // 股票总价格
         void set_tot(){ total_val = shares * share_val; }
     public:
-        void acquire(const std::string & co, long n, double pr);
-        void buy(long num, double price);
+        void acquire(const std::string & co, long n, double pr); // 获得股票
+        void buy(long num, double price);  // 增持股票
         void sell(long num, double price);
         void update(double price);
         void show();
