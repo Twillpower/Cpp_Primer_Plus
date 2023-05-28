@@ -1,7 +1,6 @@
-// stockOO.h - -股票类接口
-// version 00 
-#ifndef STOCK00_H_
-#define STOCK00_H_
+// stock10.h——Stock类声明带有构造函数，添加了析构函数
+#ifndef STOCK10_H_
+#define STOCK10_H_
 
 #include <string>
 
@@ -19,11 +18,14 @@ class Stock
         */
         void set_tot(){ total_val = shares * share_val; }
     public:
-        void acquire(const std::string & co, long n, double pr); // 获得股票
+        //两个构造函数
+        Stock();  // 默认构造函数
+        Stock(const std::string & co, long n = 0, double pr = 0.0);
+        ~Stock(); // noisy destructor
         void buy(long num, double price);  // 增持股票
         void sell(long num, double price);
         void update(double price);
         void show();
 };  // 注意末尾的分号
 
-#endif
+#endif // !STOCK10_H_
