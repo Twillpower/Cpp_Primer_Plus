@@ -11,9 +11,9 @@ int main()
         Stock stock2 = Stock("Boffo Objects", 2, 2.0); // 显式调用
         stock2.show();
 
-        cout << "Assigning stockl to stock2:\n";
+        cout << "Assigning stock1 to stock2:\n";
         stock2 = stock1;
-        cout << "Listing stockl and stock2: \n";
+        cout << "Listing stock1 and stock2: \n";
         stock1.show();
         stock2.show();
 

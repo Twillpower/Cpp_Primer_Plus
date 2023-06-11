@@ -1,6 +1,6 @@
-// stock10.cpp——Stock类声明带有构造函数，添加了析构函数
+// stock20.cpp
 #include <iostream>
-#include "4_stock10.h"
+#include "7_stock20.h"
 
 //构造函数(详细版本)
 Stock::Stock() // 默认构造函数
@@ -97,4 +97,12 @@ void Stock::show() const  // const表示当前类的成员函数不会去修改�
     // 恢复为原始格式
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
+}
+
+const Stock & Stock::topval(const Stock & s) const 
+{
+    if(s.total_val > total_val)  // total_val == this->total_val
+        return s;
+    else
+        return *this;
 }

@@ -1,8 +1,8 @@
-objs = 5_stock10.o 6_usestock2.o
+objs = 8_stock20.o 9_usestock2.o
 
-6_usestock2 : $(objs)
+9_usestock2 : $(objs)
 #$^所有依赖文件的集合，使用空格分开，如果在依赖文件中有多个重复的文件，
-	g++ $^ -o 6_usestock2 
+	g++ $^ -o 9_usestock2 
 
 %.o : %.cpp
 # -Wall表示显示编译的时候所有警告
@@ -16,4 +16,4 @@ clean-o:
 	rm -rf *.o
 
 clean-all:
-	rm -rf *.o 6_usestock2
+	rm -rf *.o 9_usestock2
