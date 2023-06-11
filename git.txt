@@ -22,3 +22,9 @@ git commit -m *  //推送所有文件至本地库
 git remote -v   //查看推送链接
 git push -u C++_Primer_Plus_GitHub master  //推送至GitHub
 git push -u C++_Primer_Plus_Gitee master   //推送至Gitee (-f:强制提交)
+
+
+git add *
+git commit -m *
+git push -u C++_Primer_Plus_GitHub master
+git push -u C++_Primer_Plus_Gitee master
